@@ -16,9 +16,9 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
-                                <button className="text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md">Home</button>
-                                <button className="text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md">Features</button>
-                                <button className="text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md">About Pay</button>
+                                <button className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md">Home</button>
+                                <button className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md">Features</button>
+                                <button className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md">About Pay</button>
                             </div>
                         </div>
                     </div>
@@ -26,11 +26,11 @@ export default function Navbar() {
                         <div className="ml-4 flex items-center md:ml-6">
                             <div className="relative">
                                 <input type="text" name="search" id="name1" placeholder='Search' className='w-64 lg:w-80 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500' />
-                                <button className='absolute min-h-[82%] right-0 top-0 my-1 mr-1 bg-green-500 text-white px-4 py-1 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500'>
+                                <button className='absolute min-h-[82%] right-0 top-0 my-1 mr-1 bg-green-500 text-white px-4 py-1 rounded-md hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500'>
                                     <FaSearch />
                                 </button>
                             </div>
-                            <button className="ml-4 text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md">Download</button>
+                            <button className="ml-4 text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md">Download</button>
                         </div>
                     </div>
                     <div className="-mr-2 flex md:hidden">
