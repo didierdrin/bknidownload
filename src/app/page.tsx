@@ -58,9 +58,9 @@ const Homepage = () => {
           <hr className="bg-slate-200 h-[2px] mb-4" />
           {/* Add more content for the updates section here */}
           <h2 className="text-md font-semibold">Kevin Rusagara</h2>
-          <p className="text-xs mb-2">"Ever since I started working for Bukon!, my life changed for the better!"</p>
+          <p className="text-xs mb-2">&quot;Ever since I started working for Bukon!, my life changed for the better!&quot;</p>
           <h2 className="text-md font-semibold">Gabriella Keza</h2>
-          <p className="text-xs mb-2">"My journey with Kados started since 2024, my life changed for the better."</p>
+          <p className="text-xs mb-2">&quot;My journey with Kados started since 2024, my life changed for the better.&quot;</p>
         </div>
       </div>
         </div>
