@@ -1,8 +1,9 @@
-// / home page
+import Image from "next/image";
+
 const Homepage = () => {
-    return (
-        <div className="min-h-screen flex flex-col h-[500px] w-full px-10 pt-0">
-            {/* Content */}
+  return (
+    <div className="min-h-screen flex flex-col h-[500px] w-full px-10 pt-0">
+      {/* Content */}
       <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-around min-h-screen p-4">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <div className="max-w-4xl mx-auto text-white">
@@ -14,13 +15,12 @@ const Homepage = () => {
             </h2>
 
             <div className="text-center space-y-4 mb-8">
-              <a
-                href="/bukoni-app.apk"
-                download
-                className="bg-slate-800 hover:bg-slate-900 hover:text-green-400 text-white font-bold py-3 px-6 rounded-lg text-lg inline-block"
-              >
-                Download Android App
-              </a>
+              <AppDownloadCard
+                title="Bukoni App"
+                description="Get the latest version of the Bukoni Android app"
+                imageSrc="/bukoni-icon.png"
+                apkName="bukoni-app.apk"
+              />
               <p className="text-sm">
                 Available for Android devices. iOS version coming soon!
               </p>
@@ -56,15 +56,38 @@ const Homepage = () => {
         <div className="w-full pb-10 md:w-1/3 bg-green-300 md:bg-green-100 p-4 rounded-lg">
           <p className="text-lg font-bold mb-8 mt-4">Check the latest updates!</p>
           <hr className="bg-slate-200 h-[2px] mb-8" />
-          {/* Add more content for the updates section here */}
           <h2 className="text-md font-semibold">Kevin Runiga</h2>
           <p className="text-xs mb-6">&quot;Ever since I started selling on Bukon!, my brand got recurring sales. Thanks to their market team for doing a great job.&quot;</p>
           <h2 className="text-md font-semibold">Gabriella Keza</h2>
           <p className="text-xs mb-2">&quot;My journey with Bukon! started in 2024, my life changed for the better.&quot;</p>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
-export default Homepage; 
+interface AppDownloadCardProps {
+  title: string;
+  description: string;
+  imageSrc: string;
+  apkName: string;
+}
+
+const AppDownloadCard = ({ title, description, imageSrc, apkName }: AppDownloadCardProps) => {
+  return (
+    <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-full md:w-64 flex flex-col items-center">
+      <Image src={imageSrc} alt={`${title} icon`} width={80} height={80} className="mb-4" />
+      <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+      <p className="text-sm mb-4">{description}</p>
+      <a
+        href={`/${apkName}`}
+        download
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+      >
+        Download APK
+      </a>
+    </div>
+  );
+};
+
+export default Homepage;
