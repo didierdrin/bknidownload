@@ -53,7 +53,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full pb-10 md:w-1/3 bg-green-100 p-4 rounded-lg">
+        <div className="w-full pb-10 md:w-1/3 bg-green-300 md:bg-green-100 p-4 rounded-lg">
           <p className="text-lg font-bold mb-8 mt-4">Check the latest updates!</p>
           <hr className="bg-slate-200 h-[2px] mb-8" />
           {/* Add more content for the updates section here */}

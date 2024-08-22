@@ -54,7 +54,7 @@ export default function Navbar() {
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <button className="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Home</button>
                         <button className="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">FeaturesG</button>
-                        <button className="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Download</button>
+                        <button  className="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Download</button>
                     </div>
                     <div className="pt-4 pb-3 border-t border-gray-200">
                         <div className="px-2">
