@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-    const filePath = path.resolve('/bukoni-app.apk');
+    const filePath = path.resolve('/Bukoni.apk');
     const stat = fs.statSync(filePath); 
     
     res.writeHead(200, {
