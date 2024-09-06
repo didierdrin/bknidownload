@@ -15,7 +15,7 @@ const Homepage = () => {
 
             <div className="text-center space-y-4 mb-8">
               <a
-                href="/bukoni-app.apk"
+                href="/Bukoni.apk"
                 download
                 className="bg-slate-800 hover:bg-slate-900 hover:text-green-400 text-white font-bold py-3 px-6 rounded-lg text-lg inline-block"
               >
